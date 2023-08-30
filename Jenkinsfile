@@ -5,12 +5,17 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh'python hello.py'
+                sh 'python3 hello.py'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh '''
+                which python
+                which python3
+                pwd
+                ls
+                '''
             }
         }
         stage('Deploy') {
