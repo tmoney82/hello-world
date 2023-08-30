@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'raspberry-pi'}
 
     stages {
         stage('Build') {
