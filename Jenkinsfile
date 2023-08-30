@@ -1,5 +1,5 @@
 pipeline {
-    agent('raspberry-pi')
+    agent()
 
     stages {
         stage('Build') {
