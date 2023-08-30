@@ -4,5 +4,5 @@ def main():
 
 if __name__ == '__main__':
     print('Starting program...')
-    print('next test...')
+    print('trying to test webhooks...')
     main()
